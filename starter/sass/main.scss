@@ -4,7 +4,7 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variable";
 
-// @import "./vendors/examle.css";
+@import "./vendors/icons.css";
 
 @import "./base/base";
 @import "./base/animations";
@@ -12,6 +12,7 @@
 @import "./base/utilities";
 
 @import "./layout/header";
+@import "./layout/sidebar-menu";
 
 // @import "./components/example";
 

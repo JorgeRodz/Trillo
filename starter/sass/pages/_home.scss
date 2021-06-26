@@ -20,10 +20,16 @@
 .sidebar {
   background-color: $color-grey-dark-1;
   flex: 0 0 18%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: $color-white;
   background-color: rebeccapurple;
+  height: 80rem;
+
   flex: 1;
 }
