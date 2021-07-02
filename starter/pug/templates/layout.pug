@@ -1,0 +1,28 @@
+//- Indica que estamos usando html5
+doctype html
+//- Indicamos el lenguaje de nuestra pagina web
+html(lang="eng")
+  head
+    //- Para que se pueden leer caracteres especiales
+    meta(charset='UTF-8')
+    //- Etiqueta SEO para motores de busqueda
+    meta(name='description' content='Landing page example')
+    //- Etiqueta SEO para robots de busqueda
+    meta(name='robots' content='index, follow')
+    //- Etiqueta necesaria para trabajar con resposive design
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    //- Para agregar compatibilidad con internet explorer
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    //- Titulo del documento
+    link(rel="stylesheet" href="./sass/main.scss")
+    link(rel="shortcut icon", href="./img/favicon.png", type="image/x-icon")
+    title trillo &mdash; Your all-in-one booking app
+  body
+    div.container
+      block header
+        include ./../includes/header
+      div.content
+        block sidebar
+          include ./../includes/sidebar
+        block main
+          include ./../includes/main-index

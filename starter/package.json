@@ -6,10 +6,19 @@
   "main": "./dist/index.html",
   "_____commentEnd": "DEFINE PARCEL BUILD OUTPUT -----",
   "scripts": {
-    "_____commentStart1": "SCRIPTS FOR PARCEL V.2 -----",
+    "_____commentStart1": "SCRIPTS DEVELOPT WORKFLOW -----",
+    "pug:watch": "pug -w ./pug/index.pug -o ./ -P",
     "parcel:serve": "parcel serve ./index.html",
+    "nra-dev": "npm-run-all --parallel pug:watch parcel:serve",
+    "_____commentEnd1": "SCRIPTS DEVELOPT WORKFLOW -----",
+    "_____commentStart2": "SCRIPTS BUILD WORKFLOW -----",
+    "pug:compile": "pug ./pug/index.pug -o ./ -P",
     "parcel:build": "parcel build ./index.html",
-    "_____commentEnd1": "SCRIPTS FOR PARCEL V.2 -----"
+    "nra-build": "npm-run-all pug:compile parcel:build",
+    "_____commentEnd2": "SCRIPTS BUILD WORKFLOW -----",
+    "_____commentStart3": "OTHERS SCRIPTS -----",
+    "pug:compile-all": "pug ./pug -o ./pug -P",
+    "_____commentEnd3": "OTHERS SCRIPTS -----"
   },
   "keywords": [],
   "author": "Jorge Alberto Rodriguez Flores",
@@ -17,7 +26,9 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-nightly.728",
     "autoprefixer": "^10.2.6",
+    "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0-beta.3.1",
-    "parcel-plugin-svg-sprite": "^1.4.1"
+    "parcel-plugin-svg-sprite": "^1.4.1",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
