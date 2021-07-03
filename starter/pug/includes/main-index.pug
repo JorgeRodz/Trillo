@@ -1,22 +1,77 @@
 main.hotel-view
-  .gallery
-    .gallery__item-1
+  div.gallery
+    div.gallery__item-1
       span.gallery__item-description main pool at night
-    .gallery__item-2
+    div.gallery__item-2
       span.gallery__item-description main pool
-    .gallery__item-3
+    div.gallery__item-3
       span.gallery__item-description.item3 Sea lanscaping view
-  .overview
+  div.overview
     h1.overview__heading Hotel Las Palmas
-    .overview__starts
+    div.overview__starts
       i.overview__icon-start.icon-star
       i.overview__icon-start.icon-star
       i.overview__icon-start.icon-star
       i.overview__icon-start.icon-star
       i.overview__icon-start.icon-star
-    .overview__location
+    div.overview__location
       i.overview__icon-location.icon-location-pin
       button.btn-inline Albufeira, Portugal
-    .overview__rating
-      .overview__rating-average 8.6
-      .overview__rating-count 429 votes
+    div.overview__rating
+      div.overview__rating-average 8.6
+      div.overview__rating-count 429 votes
+  div.detail
+    div.description
+      p.paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+      p.paragraph Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+      ul.list
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Close to the beach
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Breakfast included
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Free airport shuttle
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Free wifi in all rooms
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Air conditioning and heating
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Pets allowed
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span We speak all lenguages
+        li.list__item
+          i.list__item-icon.icon-chevron-small-right
+          span Perfect for families
+      div.recommend
+        p.recommend__count Lucy and 3 other friends recommend this hotel
+        div.recommend__friends
+          img.recommend__photo(src="./img/user-3.jpg" alt="Friend 1")
+          img.recommend__photo(src="./img/user-4.jpg" alt="Friend 2")
+          img.recommend__photo(src="./img/user-5.jpg" alt="Friend 3")
+          img.recommend__photo(src="./img/user-6.jpg" alt="Friend 4")
+    div.user-reviews
+      figure.review
+        blockquote.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+        figcaption.review__user
+          img.review__photo(src="./img/user-1.jpg", alt="User 1")
+          div.review__user-box
+            p.review__user-name Nick Smith
+            p.review__user-date Feb 23rd, 2017
+          div.review__rating 7.8
+      figure.review
+        blockquote.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+        figcaption.review__user
+          img.review__photo(src="./img/user-2.jpg", alt="User 1")
+          div.review__user-box
+            p.review__user-name Mary Thomas
+            p.review__user-date Sept 13th, 2017
+          div.review__rating 9.3
+      button.review__btn.btn-inline Show all
+        span.arrow &rarr;
