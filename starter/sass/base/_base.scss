@@ -28,17 +28,17 @@ body {
   min-height: 100vh;
 }
 
-// html {
-//   // max-width
-//   @include respond(tablet-landscape) {
-//     font-size: 56.25%; // 1rem = 9px -> 9/16 * 100 = 56.25.
-//   }
-//   @include respond(tablet-portrait) {
-//     font-size: 50%; // 1rem = 8px -> 8/16 * 100 = 50.
-//   }
+html {
+  // max-width
+  @include respond(tablet-landscape) {
+    font-size: 56.25%; // 1rem = 9px -> 9/16 * 100 = 56.25.
+  }
+  @include respond(tablet-portrait) {
+    font-size: 50%; // 1rem = 8px -> 8/16 * 100 = 50.
+  }
 
-//   // min-width
-//   @include respond(big-desktop) {
-//     font-size: 75%; // 1rem = 12 -> 12/16 * 100 = 75.
-//   }
-// }
+  // min-width
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12 -> 12/16 * 100 = 75.
+  }
+}

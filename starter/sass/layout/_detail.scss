@@ -6,12 +6,30 @@
 
   display: flex;
 
+  @include respond(tablet-landscape) {
+    padding: 2rem;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   .description {
     flex: 0 0 60%;
     margin-right: 4.5rem;
     padding: 3rem;
     background-color: $color-white;
     box-shadow: $shadow-light;
+
+    @include respond(tablet-landscape) {
+      padding: 2.5rem;
+      margin-right: 2rem;
+    }
+
+    @include respond(phone) {
+      margin: 0;
+      margin-bottom: 2rem;
+    }
 
     .paragraph:not(:last-of-type) {
       margin-bottom: 2rem;
@@ -51,6 +69,10 @@
         color: $color-grey-dark-3;
       }
 
+      &__friends {
+        display: flex;
+      }
+
       &__photo {
         height: 4rem;
         width: 4rem;
@@ -70,6 +92,10 @@
     flex-flow: column nowrap;
     justify-content: space-between;
 
+    @include respond(tablet-portrait) {
+      justify-content: space-evenly;
+    }
+
     .review {
       background-color: $color-white;
       box-shadow: $shadow-light;
@@ -77,6 +103,10 @@
       margin-bottom: 3.5rem;
       position: relative;
       overflow: hidden;
+
+      @include respond(tablet-portrait) {
+        margin-bottom: 2rem;
+      }
 
       &::before {
         content: "\201C";

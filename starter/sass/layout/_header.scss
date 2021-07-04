@@ -1,8 +1,17 @@
 .header {
+  height: 7rem;
+  font-size: 1.4rem;
+  background-color: $color-white;
+  border-bottom: $line;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem;
+
+  @include respond(phone-small) {
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
 
   .logo {
     height: 3.25rem;
@@ -11,9 +20,15 @@
 
   .search {
     flex: 0 0 40%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(phone-small) {
+      order: 1;
+      flex-basis: 100%;
+    }
 
     &__input {
       height: 3rem;

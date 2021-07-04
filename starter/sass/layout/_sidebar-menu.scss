@@ -1,13 +1,26 @@
 .side-nav {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+
+  @include respond(tablet-portrait) {
+    display: flex;
+    margin: 0;
+  }
 
   &__item {
     position: relative;
 
+    @include respond(tablet-portrait) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @include respond(tablet-portrait) {
+        margin: 0;
+      }
     }
 
     &::before {
@@ -45,11 +58,29 @@
 
     display: flex;
     align-items: center;
+
+    @include respond(tablet-portrait) {
+      justify-content: center;
+      padding: 3rem;
+      height: 100%;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+      padding: 1.5rem;
+      flex-direction: column;
+    }
   }
   &__icon {
     font-size: 1.7rem;
     margin-right: 2rem;
     color: currentColor; // color of the parent element
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -58,4 +89,8 @@
   text-align: center;
   color: $color-grey-light-4;
   padding: 2.5rem;
+
+  @include respond(tablet-portrait) {
+    display: none;
+  }
 }
